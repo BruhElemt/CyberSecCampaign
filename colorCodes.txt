@@ -1,0 +1,2 @@
+Logo Purple : #3F00BB , R:53    G:0     B:187
+Logo Orange : #FF9900 , R:255   G:153   B:0
