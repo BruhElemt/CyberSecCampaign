@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <h2>Your IP: <span id="ipSpan"></span></h2>
+    <h2>Your Provider: <span id="ispSpan"></span></h2>
+    <h2>Estimated Location: <span id="locationSpan"></span></h2>
+
+
+    <script>
+        fetch("https://wtfismyip.com/json").then(res => res.json()).then(data => {
+            document.querySelector("#ipSpan").innerHTML = data.YourFuckingIPAddress;
+            document.querySelector("#ispSpan").innerHTML = data.YourFuckingISP;
+            document.querySelector("#locationSpan").innerHTML = data.YourFuckingLocation;
+        });
+    </script>
+
+</body>
+</html>
