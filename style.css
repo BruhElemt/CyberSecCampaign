@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: black;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+.link:hover {
+    color: #3f00bb;
+    font-weight: 600;
+}
+
+.link-active {
+    text-decoration: underline;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-top: 5em;
+}
+
+.box {
+    max-width: 60em;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+.socials {
+    padding-top: 5em;
+}
