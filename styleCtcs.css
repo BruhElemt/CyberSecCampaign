@@ -1,0 +1,67 @@
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(rgb(255, 155, 97), rgb(255, 173, 79));
+    color: white;
+}
+
+.box {
+    max-width: 60rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-image: linear-gradient(rgba(228, 121, 79, 0.4), rgba(230, 92, 74, 0.4));
+}
+
+.image1 {
+    padding: 1rem;
+    height: 100%;
+    max-width: 4rem;
+    transform: scale(1.0);
+    background-color: rgba(230, 92, 74, 0.534);
+
+
+
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(252, 252, 252);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(255, 225, 181);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+.image1:hover {
+    background-color: rgba(230, 92, 74, 1);
+    transform: scale(1.6);
+    animation: bigger 200ms ease-in 1 alternate;
+}
+@keyframes bigger {
+    0%{
+        transform: scale(1.0); 
+     }
+     33%{
+        transform: scale(1.2); 
+     }
+     66%{
+        transform: scale(1.4); 
+     }
+    100%{
+       transform: scale(1.6); 
+    }
+}
+ul > li{
+    display:inline-block;
+}
