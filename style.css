@@ -4,48 +4,84 @@ html, body {
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400;
-    color: black;
-    padding: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #5b5b5b;
 }
 
-nav {
+section {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.link {
-    text-decoration: none;
-    font-size: 1.5em;
-    color: black;
-}
-
-.link:hover {
-    color: #3f00bb;
-    font-weight: 600;
-}
-
-.link-active {
-    text-decoration: underline;
-}
-
-.news {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2em;
-    padding-top: 5em;
+    flex-direction: column;
 }
 
-.box {
-    max-width: 60em;
-    border: 1px solid black;
-    padding: 1em;
+h2 {
+    max-width: 20em;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+}
+
+.section-first {
+    padding-top: 17vh;
+    color: #eeeeee;
+    min-height: 60vh;
+    margin-bottom: 5em;
+    background-image: url("./overlay.png");
+    text-align: center;
+}
+
+.section-first > h1 {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+}
+
+.logo {
+    max-width: 15em;
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+.section-second {
+    margin-bottom: 10em;
+}
+
+.block-text {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+.section-third {
+    margin-bottom: 10em;
+}
+
+.section-third > div {
+    display: flex;
+}
+
+.section-third {
+    margin-bottom: 10em;
+}
+
+.section-fourth {
+    margin-bottom: 10em;
+}
+
+footer {
+    min-height: 20vh;
+    background: green;
 }
 
 .socials {
-    padding-top: 5em;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
