@@ -3,7 +3,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-image: linear-gradient(rgb(255, 155, 97), rgb(255, 173, 79));
+    background: linear-gradient(to bottom right,rgb(202, 202, 202), rgb(164, 166, 185)) no-repeat bottom,
+    linear-gradient(rgb(141, 141, 143), rgb(87, 89, 102)) no-repeat top;
+    background-size: 100% 26.2em, 100% calc(55% - 7em);
     color: white;
 }
 
@@ -11,7 +13,7 @@ body{
     max-width: 60rem;
     border: 1px solid black;
     padding: 1rem;
-    background-image: linear-gradient(rgba(228, 121, 79, 0.4), rgba(230, 92, 74, 0.4));
+    background-image: linear-gradient(rgba(68, 83, 104, 0.3), rgba(59, 61, 117, 0.2));
 }
 
 .image1 {
@@ -19,7 +21,7 @@ body{
     height: 100%;
     max-width: 4rem;
     transform: scale(1.0);
-    background-color: rgba(230, 92, 74, 0.534);
+    background-color: rgba(74, 142, 230, 0.534);
 
 
 
@@ -44,7 +46,7 @@ a:link {
   }
   
 .image1:hover {
-    background-color: rgba(230, 92, 74, 1);
+    background-color: rgb(84, 74, 230);
     transform: scale(1.6);
     animation: bigger 200ms ease-in 1 alternate;
 }
