@@ -6,17 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheySeeUs - Cybersecurity</title>
-    <link rel="stylesheet" href="style.css">
 
+    <!-- Google Fonts Roboto 400,500,700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DLP6CCC36"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-7DLP6CCC36');
+        gtag('config', 'G-7DLP6CCC36');
     </script>
+    
 </head>
 
 <body>
@@ -36,13 +43,15 @@
     -->
 
     <section class="section-first">
+        <div id="particles-js"></div>
+
         <img class="logo" src="./logo.png" alt="logo">
-        <h1>CYBER SECURITY</h1>
-        <h4>Team 4</h4>
     </section>
 
     <section class="section-second">
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, amet!</h2>
+        <h2>WE CONDUCT EXPERIMENTS THAT
+            MAY OR MAY NOT SERIOUSLY
+            BREAK THE UNIVERSE</h2>
     </section>
 
     <section class="section-third">
@@ -91,8 +100,10 @@
 
     <footer>
         <div class="socials">
-            <span>Facebook Embed</span><br>
-            <span>Twitter Embed</span><br>
+            <span>
+                <a href="https://twitter.com/TheySeeUs2?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @TheySeeUs2</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </span>
+            <br>
             <span>Instagram Embed</span>
         </div>
     </footer>
@@ -110,6 +121,13 @@
         </filter>
     </svg>
 
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+    <script>
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
 
 </body>
 
