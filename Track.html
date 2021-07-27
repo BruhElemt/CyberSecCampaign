@@ -7,12 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body id="track-body">
     
-    <h2>Your IP: <span id="ipSpan"></span></h2>
-    <h2>Your Provider: <span id="ispSpan"></span></h2>
-    <h2>Estimated Location: <span id="locationSpan"></span></h2>
-
+    <code>
+        👨‍💻
+        <span class="label">Your IP:</span> <span id="ipSpan"></span>
+        📡
+        <span class="label">Your Provider:</span> <span id="ispSpan"></span>
+        📍
+        <span class="label">Estimated Location:</span> <span id="locationSpan"></span>
+    </code>
 
     <script>
         fetch("https://wtfismyip.com/json").then(res => res.json()).then(data => {
