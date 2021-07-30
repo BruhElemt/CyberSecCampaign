@@ -6,7 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheySeeUs - Cybersecurity</title>
+
+    <!-- Google Fonts Roboto 400,500,700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DLP6CCC36"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7DLP6CCC36');
+    </script>
+
 </head>
 
 <body>
@@ -25,20 +42,26 @@
     </nav>
     -->
 
+    <section class="section-null">
+        <iframe src="Track.html" scrolling="no" frameborder="0"></iframe>
+    </section>
+
     <section class="section-first">
-        <img class="logo" src="./logo.png" alt="logo">
-        <h1>CYBER SECURITY</h1>
-        <h4>Team 4</h4>
+        <div id="particles-js"></div>
+
+        <img class="logo" src="./logoWhite.png" alt="logo">
     </section>
 
     <section class="section-second">
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, amet!</h2>
+        <h2>The only firewall that protects against cyber criminals is your 🧠</h2>
     </section>
 
     <section class="section-third">
 
         <div class="row">
-            <img class="block-img" src="./overlay.png" alt="">
+            <div class=block-img>
+                <img src="./undraw/shield.svg" alt="">
+            </div>
 
             <div class="block-text">
                 <p>
@@ -56,16 +79,19 @@
                 </p>
             </div>
 
-            <img class="block-img" src="./overlay.png" alt="">
+            <div class=block-img>
+                <img src="./undraw/shield.svg" alt="">
+            </div>
         </div>
 
         <div class="row">
-            <img class="block-img" src="./overlay.png" alt="">
+            <div class=block-img>
+                <img src="./undraw/shield.svg" alt="">
+            </div>
 
             <div class="block-text">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam totam dolorum blanditiis incidunt
-                    distinctio quos!
+                    <a href="Contact.html">Contact</a>
                 </p>
             </div>
         </div>
@@ -74,20 +100,24 @@
 
     <section class="section-fourth">
         <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, saepe?</h2>
-        <button>
-            <a href="#">Explore</a>
-        </button>
+        <a href="#">
+            <button>
+            Explore
+            </button>
+        </a>
+        
     </section>
 
     <footer>
-        <div class="socials">
-            <span>Facebook Embed</span><br>
-            <span>Twitter Embed</span><br>
-            <span>Instagram Embed</span>
-        </div>
+        <span>
+            <a href="https://twitter.com/TheySeeUs2?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                data-show-count="false">Follow @TheySeeUs2</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </span>
+        <span>📸 TheySeeUsCS</span>
     </footer>
 
-    <svg height="0" xmlns="http://www.w3.org/2000/svg">
+    <svg id="svgShadowHack" height="0" xmlns="http://www.w3.org/2000/svg">
         <filter id="drop-shadow">
             <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
             <feOffset dx="12" dy="12" result="offsetblur" />
@@ -100,6 +130,13 @@
         </filter>
     </svg>
 
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+    <script>
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
 
 </body>
 
