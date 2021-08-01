@@ -1,5 +1,3 @@
-
-
 html, body {
     margin: 0;
     padding: 0;
@@ -34,6 +32,39 @@ button {
     border-radius: 1em;
     font-size: 1em;
     cursor: pointer;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+
+    z-index: 2;
+    margin-bottom: 2em;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    margin-right: 1em;
+    cursor: pointer;
+
+    font-size: 1.5em;
+}
+
+.link:hover {
+    color: hsl(0, 0%, 100%);
+
+    background: #FDC830;
+    background: -webkit-linear-gradient(to right, #FDC830 0%, #F37335 100%);
+    background: -moz-linear-gradient(to right, #FDC830 0%, #F37335 100%);
+    background: linear-gradient(to right, #FDC830 0%, #F37335 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .section-null {
@@ -120,7 +151,7 @@ code {
 }
 
 .block-img {
-    background: url("blurry.jpg");
+    background: url("../img/blurry.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -137,6 +168,21 @@ code {
     transform: scale(0.6);
 }
 
+.section-third {
+    margin-bottom: 10em;
+}
+
+.section-third > div {
+    display: flex;
+}
+
+.section-third {
+    margin-bottom: 10em;
+}
+
+.section-fourth {
+    margin-bottom: 10em;
+}
 
 footer {
     min-height: 20vh;
@@ -152,13 +198,4 @@ footer > span {
 
 #svgShadowHack {
     position: absolute;
-}
-
-p {
-    text-align: justify;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    font-family: 'Roboto', sans-serif;
 }

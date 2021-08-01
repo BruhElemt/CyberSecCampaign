@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheySeeUs - Cybersecurity</title>
+    <title>They See Us - A CyberSecurity Campaign</title>
 
     <!-- Google Fonts Roboto 400,500,700 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DLP6CCC36"></script>
@@ -23,33 +23,30 @@
 
         gtag('config', 'G-7DLP6CCC36');
     </script>
-
 </head>
 
 <body>
 
-    <!--
-    <nav>
-        <div>
-            <a class="link link-active" href="#News">News</a>
-        </div>
-        <div>
-            <a class="link" href="#ProtectYourself">Protect yourself</a>
-        </div>
-        <div>
-            <a class="link" href="#Contact">Contact</a>
-        </div>
-    </nav>
-    -->
-
     <section class="section-null">
-        <iframe src="Track.html" scrolling="no" frameborder="0"></iframe>
+        <iframe src="./track.html" scrolling="no" frameborder="0"></iframe>
     </section>
 
     <section class="section-first">
         <div id="particles-js"></div>
 
-        <img class="logo" src="./logoWhite.png" alt="logo">
+        <img class="logo" src="./assets/img/logoWhite.png" alt="logo">
+
+        <nav>
+            <div>
+                <a class="link link-active" href="./common-scams.html">Common Scams</a>
+            </div>
+            <div>
+                <a class="link" href="./us.html">About Us</a>
+            </div>
+            <div>
+                <a class="link" href="./contact.html">Contact</a>
+            </div>
+        </nav>
     </section>
 
     <section class="section-second">
@@ -60,7 +57,7 @@
 
         <div class="row">
             <div class=block-img>
-                <img src="./undraw/shield.svg" alt="">
+                <img src="./assets/img/undraw/shield.svg" alt="">
             </div>
 
             <div class="block-text">
@@ -80,18 +77,18 @@
             </div>
 
             <div class=block-img>
-                <img src="./undraw/shield.svg" alt="">
+                <img src="./assets/img/undraw/shield.svg" alt="">
             </div>
         </div>
 
         <div class="row">
             <div class=block-img>
-                <img src="./undraw/shield.svg" alt="">
+                <img src="./assets/img/undraw/shield.svg" alt="">
             </div>
 
             <div class="block-text">
                 <p>
-                    <a href="Contact.html">Contact</a>
+                    <a href="./contact.html">Contact Us</a>
                 </p>
             </div>
         </div>
@@ -133,7 +130,7 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
     <script>
         /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-        particlesJS.load('particles-js', 'particles.json', function () {
+        particlesJS.load('particles-js', './assets/js/particles.json', function () {
             console.log('callback - particles.js config loaded');
         });
     </script>
